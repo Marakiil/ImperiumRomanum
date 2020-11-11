@@ -58,14 +58,14 @@ public class RoemischeZahlen {
 					hundert = hundert + "M";
 				}
 			}
-			if(tmp == 5 || tmp > 5) {
-				hundert = hundert + "D";
-			}
-			if(tmp < 4 || tmp > 5 && tmp < 9) {
-				while(i != 0) {
-					hundert = hundert + "C";
-					i--;
+			else if(tmp == 5 || tmp > 5) {
+					hundert = hundert + "D";
 				}
+				if(tmp < 4 || tmp > 5 && tmp < 9) {
+					while(i != 0) {
+						hundert = hundert + "C";
+						i--;
+					}
 			}
 			
 			
@@ -84,13 +84,13 @@ public class RoemischeZahlen {
 					zehn = zehn + "C";
 				}
 			}
-			if(tmp == 5 || tmp > 5) {
-				zehn = zehn + "L";
-			}
-			if(tmp < 4 || tmp > 5 && tmp < 9) {
-				while(i != 0) {
-					zehn = zehn + "X";
-					i--;
+			else	if(tmp == 5 || tmp > 5) {
+					zehn = zehn + "L";
+				}
+				if(tmp < 4 || tmp > 5 && tmp < 9) {
+					while(i != 0) {
+						zehn = zehn + "X";
+						i--;
 				}
 			}
 			ausgabe = ausgabe + zehn;
@@ -108,13 +108,13 @@ public class RoemischeZahlen {
 					eins = eins + "X";
 				}
 			}
-			if(tmp == 5 || tmp > 5) {
+			else if(tmp == 5 || tmp > 5) {
 				eins = eins + "V";
-			}
-			if(tmp < 4 || tmp > 5 && tmp < 9) {
-				while(i != 0) {
-					eins = eins + "I";
-					i--;
+				}
+				if(tmp < 4 || tmp > 5 && tmp < 9) {
+					while(i != 0) {
+						eins = eins + "I";
+						i--;
 				}
 			}
 			ausgabe = ausgabe + eins;
